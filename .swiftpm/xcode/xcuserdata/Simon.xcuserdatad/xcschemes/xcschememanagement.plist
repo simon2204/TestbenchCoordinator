@@ -10,5 +10,23 @@
 			<integer>0</integer>
 		</dict>
 	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>TestbenchAPIUploader</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>TestbenchCoordinator</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>TestbenchCoordinatorTests</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
 </dict>
 </plist>
