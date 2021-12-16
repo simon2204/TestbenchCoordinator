@@ -2,21 +2,57 @@
   "object": {
     "pins": [
       {
+        "package": "FormData",
+        "repositoryURL": "https://pi-lab3.w-hs.de/Simon/FormData.git",
+        "state": {
+          "branch": null,
+          "revision": "4dc461814b181274d12d8b926e14cb3e1e14f1ee",
+          "version": "2.0.2"
+        }
+      },
+      {
+        "package": "MoodleAPI",
+        "repositoryURL": "https://pi-lab3.w-hs.de/Simon/MoodleAPI.git",
+        "state": {
+          "branch": null,
+          "revision": "630a34c0b3b98d6bc8169933ecfb8aba1ecc4159",
+          "version": "2.0.5"
+        }
+      },
+      {
+        "package": "swift-argument-parser",
+        "repositoryURL": "https://github.com/apple/swift-argument-parser",
+        "state": {
+          "branch": null,
+          "revision": "e1465042f195f374b94f915ba8ca49de24300a0d",
+          "version": "1.0.2"
+        }
+      },
+      {
+        "package": "SwiftPDF",
+        "repositoryURL": "https://pi-lab3.w-hs.de/Simon/swiftpdf.git",
+        "state": {
+          "branch": "main",
+          "revision": "4c4549601e035820e90d8a48f0be690a80bd62de",
+          "version": null
+        }
+      },
+      {
         "package": "SwiftSoup",
         "repositoryURL": "https://github.com/scinfu/SwiftSoup.git",
         "state": {
           "branch": null,
-          "revision": "774dc9c7213085db8aa59595e27c1cd22e428904",
-          "version": "2.3.2"
+          "revision": "3fa09f4d79e5172b14cb50e02f1d5f115a2bbaef",
+          "version": "2.3.4"
         }
       },
       {
-        "package": "TestbenchMoodleAPI",
-        "repositoryURL": "https://github.com/simon2204/TestbenchMoodleAPI",
+        "package": "Testbench",
+        "repositoryURL": "https://pi-lab3.w-hs.de/PPRTestbench/Testbench.git",
         "state": {
-          "branch": "main",
-          "revision": "a65e72964eb4b84287fab656d95752a55f66a6af",
-          "version": null
+          "branch": null,
+          "revision": "8109872f38989de3240524efdec482d1e6ec10cb",
+          "version": "1.0.3"
         }
       },
       {
@@ -24,8 +60,8 @@
         "repositoryURL": "https://github.com/weichsel/ZIPFoundation.git",
         "state": {
           "branch": null,
-          "revision": "cf10bbff6ac3b873e97b36b9784c79866a051a8e",
-          "version": "0.9.12"
+          "revision": "7254c74b49cec2cb81520523ba993c671f71b066",
+          "version": "0.9.14"
         }
       }
     ]
