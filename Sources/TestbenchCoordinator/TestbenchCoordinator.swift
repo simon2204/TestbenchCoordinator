@@ -142,10 +142,10 @@ throws {
 	for submission in submissions {
 		let result = try testbench.performTests(submission: submission.path, assignment: assignmentID)
 		let resultData = ResultData(name: submission.name, result: result)
-		let page = Page(rootView: ResultTemplate(data: resultData))
-		let document = PDFDocument()
-		document.appendPage(page)
-		let data = document.dataRepresentation()
+        var document = Document { ResultTemplate(data: resultData) }
+        let size = document.pageSize.size
+        document.pageSize = .preferred(size)
+        let data = document.createData()
 		let writeDestination = moodleSubmission(submission)
 		try FileManager.default.removeItem(at: submission.path)
 		try FileManager.default.createDirectory(atPath: submission.path.path, withIntermediateDirectories: false)

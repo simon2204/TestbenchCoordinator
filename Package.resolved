@@ -3,20 +3,20 @@
     "pins": [
       {
         "package": "FormData",
-        "repositoryURL": "https://pi-lab3.w-hs.de/Simon/FormData.git",
+        "repositoryURL": "https://github.com/simon2204/FormData.git",
         "state": {
           "branch": null,
-          "revision": "4dc461814b181274d12d8b926e14cb3e1e14f1ee",
-          "version": "2.0.2"
+          "revision": "e3bfdc0e5ceaeab6ea823a9031d7c3e903a6970d",
+          "version": "1.0.0"
         }
       },
       {
         "package": "MoodleAPI",
-        "repositoryURL": "https://pi-lab3.w-hs.de/Simon/MoodleAPI.git",
+        "repositoryURL": "https://github.com/simon2204/MoodleAPI.git",
         "state": {
-          "branch": null,
-          "revision": "630a34c0b3b98d6bc8169933ecfb8aba1ecc4159",
-          "version": "2.0.5"
+          "branch": "main",
+          "revision": "993acf0493dc53473a72849686bb96c760052e7d",
+          "version": null
         }
       },
       {
@@ -30,11 +30,11 @@
       },
       {
         "package": "SwiftPDF",
-        "repositoryURL": "https://pi-lab3.w-hs.de/Simon/swiftpdf.git",
+        "repositoryURL": "https://github.com/simon2204/swiftpdf.git",
         "state": {
-          "branch": "main",
-          "revision": "4c4549601e035820e90d8a48f0be690a80bd62de",
-          "version": null
+          "branch": null,
+          "revision": "c5d3fdbd5b3ec3848d3e5c81850303fa91a93db0",
+          "version": "1.0.3"
         }
       },
       {
@@ -48,11 +48,11 @@
       },
       {
         "package": "Testbench",
-        "repositoryURL": "https://pi-lab3.w-hs.de/PPRTestbench/Testbench.git",
+        "repositoryURL": "https://github.com/simon2204/Testbench.git",
         "state": {
-          "branch": null,
-          "revision": "8109872f38989de3240524efdec482d1e6ec10cb",
-          "version": "1.0.3"
+          "branch": "main",
+          "revision": "4b06b08949757480f1b8de188f80a0330c1830d7",
+          "version": null
         }
       },
       {
