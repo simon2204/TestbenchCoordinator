@@ -84,7 +84,7 @@ struct Run: AsyncParsableCommand {
     
 	@OptionGroup var configuration: Configuration
     
-    mutating func run() async throws {
+    func run() async throws {
         let submissionUrl = FileManager.default.temporaryDirectory.appendingPathComponent(UUID().uuidString)
         try FileManager.default.createDirectory(at: submissionUrl, withIntermediateDirectories: false)
         

@@ -74,6 +74,16 @@
             ReferencedContainer = "container:">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+         <CommandLineArgument
+            argument = "evaluate &quot;si32356&quot; &quot;3Za4T46wI&quot; 182322 &quot;/Users/simon/Desktop/TestbenchDirectories/config.json&quot; /Users/simon/Desktop"
+            isEnabled = "NO">
+         </CommandLineArgument>
+         <CommandLineArgument
+            argument = "run &quot;si32356&quot; &quot;3Za4T46wI&quot; 182327 &quot;/Users/simon/Desktop/TestbenchDirectories/config.json&quot;"
+            isEnabled = "YES">
+         </CommandLineArgument>
+      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
