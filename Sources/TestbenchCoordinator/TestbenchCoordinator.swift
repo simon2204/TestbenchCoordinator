@@ -70,7 +70,7 @@ struct Evaluate: AsyncParsableCommand {
 
 		let assignment = taskSelection.assignmentID
 		
-		try createFeedback(forSubmissions: submissions, assignmentID: assignment, config: configUrl) {
+		try await createFeedback(forSubmissions: submissions, assignmentID: assignment, config: configUrl) {
 			URL(fileURLWithPath: "\(destination)/results/\($0.name)_result.pdf")
 		}
 		
@@ -96,7 +96,7 @@ struct Run: AsyncParsableCommand {
 
 		let assignment = taskSelection.assignmentID
 		
-		try createFeedback(forSubmissions: submissions, assignmentID: assignment, config: configUrl) {
+		try await createFeedback(forSubmissions: submissions, assignmentID: assignment, config: configUrl) {
 			return $0.path.appendingPathComponent("Auswertungsprotokoll.pdf")
 		}
 		
@@ -134,22 +134,27 @@ private func createFeedback(
 	forSubmissions submissions: [MoodleSubmission],
 	assignmentID: Int,
 	config: URL,
-	moodleSubmission: (MoodleSubmission) -> URL)
-throws {
+    moodleSubmission: @escaping (MoodleSubmission) -> URL)
+async throws {
 	
-	let testbench = Testbench(config: config)
-	
-	for submission in submissions {
-		let result = try testbench.performTests(submission: submission.path, assignment: assignmentID)
-		let resultData = ResultData(name: submission.name, result: result)
-        var document = Document { ResultTemplate(data: resultData) }
-        let size = document.pageSize.size
-        document.pageSize = .preferred(size)
-        let data = document.createData()
-		let writeDestination = moodleSubmission(submission)
-		try FileManager.default.removeItem(at: submission.path)
-		try FileManager.default.createDirectory(atPath: submission.path.path, withIntermediateDirectories: false)
-		try data.write(to: writeDestination)
-	}
+    try await withThrowingTaskGroup(of: Void.self) { group in
+        for submission in submissions {
+            group.addTask {
+                let testbench = Testbench(config: config)
+                let result = try testbench.performTests(submission: submission.path, assignment: assignmentID)
+                let resultData = ResultData(name: submission.name, result: result)
+                var document = Document { ResultTemplate(data: resultData) }
+                let size = document.pageSize.size
+                document.pageSize = .preferred(size)
+                let data = document.createData()
+                let writeDestination = moodleSubmission(submission)
+                try FileManager.default.removeItem(at: submission.path)
+                try FileManager.default.createDirectory(atPath: submission.path.path, withIntermediateDirectories: false)
+                try data.write(to: writeDestination)
+            }
+        }
+        
+        try await group.waitForAll()
+    }
 }
 

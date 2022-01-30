@@ -76,12 +76,12 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "evaluate &quot;si32356&quot; &quot;3Za4T46wI&quot; 182322 &quot;/Users/simon/Desktop/TestbenchDirectories/config.json&quot; /Users/simon/Desktop"
-            isEnabled = "NO">
+            argument = "evaluate &quot;si32356&quot; &quot;3Za4T46wI&quot; 182338 &quot;/Users/simon/Desktop/TestbenchDirectories/config.json&quot; /Users/simon/Desktop"
+            isEnabled = "YES">
          </CommandLineArgument>
          <CommandLineArgument
-            argument = "run &quot;si32356&quot; &quot;3Za4T46wI&quot; 182327 &quot;/Users/simon/Desktop/TestbenchDirectories/config.json&quot;"
-            isEnabled = "YES">
+            argument = "run &quot;si32356&quot; &quot;3Za4T46wI&quot; 182338 &quot;/Users/simon/Desktop/TestbenchDirectories/config.json&quot;"
+            isEnabled = "NO">
          </CommandLineArgument>
       </CommandLineArguments>
    </LaunchAction>

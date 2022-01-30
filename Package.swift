@@ -10,7 +10,7 @@ let package = Package(
         .package(url: "https://github.com/simon2204/MoodleAPI.git", .branch("main")),
 		.package(url: "https://github.com/simon2204/Testbench.git", .branch("main")),
 		.package(url: "https://github.com/apple/swift-argument-parser", from: "1.0.0"),
-		.package(url: "https://github.com/simon2204/swiftpdf.git", from: "1.0.0")
+		.package(url: "https://github.com/simon2204/swiftpdf.git", from: "1.0.0"),
     ],
     targets: [
         .executableTarget(
