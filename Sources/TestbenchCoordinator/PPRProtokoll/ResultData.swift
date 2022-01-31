@@ -38,7 +38,7 @@ struct ResultData {
 		result.entries
 	}
 	
-	var error: String? {
+	var error: String {
 		result.errorMsg
 	}
 }

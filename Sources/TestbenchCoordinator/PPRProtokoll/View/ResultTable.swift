@@ -9,7 +9,7 @@ struct ResultTable: View {
 		result.entries
 	}
 	
-	private var error: String? {
+	private var error: String {
 		result.error
 	}
 	
@@ -27,11 +27,6 @@ struct ResultTable: View {
 			tableHeader
 
 			HorizontalDivider()
-			
-			if let error = error {
-				errorRow(error)
-				HorizontalDivider()
-			}
 			
 			ForEach(entries) { entry in
 				

@@ -23,7 +23,11 @@ struct ResultTemplate: View {
 				.padding(.leading, leadingPadding)
 
 			HorizontalDivider(title: "Auswertung")
-			
+            
+            if !data.error.isEmpty {
+                ErrorView(description: data.error)
+            }
+            
 			ResultTable(result: data)
 
 			Spacer(minLength: 0)

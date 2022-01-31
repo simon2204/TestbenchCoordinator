@@ -42,8 +42,8 @@
         "repositoryURL": "https://github.com/scinfu/SwiftSoup.git",
         "state": {
           "branch": null,
-          "revision": "45a7566f7ec2de0b977f28e825f8df874f210327",
-          "version": "2.3.6"
+          "revision": "13ba661fd1146967270fca92ce8195b223631436",
+          "version": "2.3.8"
         }
       },
       {
@@ -51,7 +51,7 @@
         "repositoryURL": "https://github.com/simon2204/Testbench.git",
         "state": {
           "branch": "main",
-          "revision": "24775c7fa27dcce8043b6120cd378796445fd0f5",
+          "revision": "8c43ff5305014ebe70c2df81f88d19a187611f17",
           "version": null
         }
       },
